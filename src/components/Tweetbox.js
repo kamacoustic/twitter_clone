@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Tweetbox.css'
 import { Avatar, Button } from '@material-ui/core'
+import morty from './images/morty.jpg'
 import db from './firebase'
 
 
@@ -31,7 +32,7 @@ const Tweetbox = () => {
         <div className="tweetBox">
            <form>
             <div className="tweetBox__input">
-                <Avatar src="https://images.app.goo.gl/vrqW5jmdBM6E4dTWA"></Avatar>
+                <Avatar src={morty}></Avatar>
                 <input 
                 onChange={(e) => setTweetMessage(e.target.value)}
                 value={tweetMessage} 

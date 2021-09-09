@@ -5,6 +5,7 @@ import RepeatIcon from '@material-ui/icons/Repeat'
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
 import PublishIcon from '@material-ui/icons/Publish'
 import React, { forwardRef } from 'react'
+import morty from './images/morty.jpg'
 import './Post.css'
 import db from './firebase'
 
@@ -15,7 +16,7 @@ const Post = forwardRef(
         return (
             <div className="post" ref={ref}>
                 <div className="post__avatar">
-                    <Avatar src={avatar} alt="avatar"></Avatar>
+                    <Avatar src={morty} alt="avatar"></Avatar>
                 </div>
                 <div className="post__body">
                 <div className="post__header">
